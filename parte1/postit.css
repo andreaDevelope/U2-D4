@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+main {
+  margin-top: 5rem;
+  padding: 2rem 3rem;
+  background-color: #666666;
+  min-height: 60vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.post-it {
+  width: 20%;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+
+.orange {
+  background-image: linear-gradient(to top, lightgray, #f6f6c4);
+  rotate: -5deg;
+  box-shadow: 5px 5px 10px rgba(10, 10, 10, 0.5);
+}
+
+.green {
+  background-image: linear-gradient(to top, lightgray, #bae0bb);
+  rotate: 5deg;
+  box-shadow: 5px 5px 10px rgba(10, 10, 10, 0.5);
+}
+
+.purple {
+  background-image: linear-gradient(to top, lightgray, #b3b2d0);
+  rotate: -7deg;
+  box-shadow: 5px 5px 10px rgba(10, 10, 10, 0.5);
+}
