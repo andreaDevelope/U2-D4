@@ -18,7 +18,14 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 1rem;
+  margin: 1.5rem;
+  transform: translateZ(1000px) scale(0);
+  animation: stick 0.3s ease-out both;
+}
+
+.post-it:hover {
+  scale: 1.2;
+  rotate: 0deg;
 }
 
 .orange {
@@ -37,4 +44,45 @@ main {
   background-image: linear-gradient(to top, lightgray, #b3b2d0);
   rotate: -7deg;
   box-shadow: 5px 5px 10px rgba(10, 10, 10, 0.5);
+}
+
+@keyframes stick {
+  0% {
+    transform: translateZ(1000px) scale(0);
+  }
+  100% {
+    transform: translateZ(0) scale(1);
+  }
+}
+
+.post-it:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.post-it:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.post-it:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.post-it:nth-child(4) {
+  animation-delay: 0.8s;
+}
+
+.post-it:nth-child(5) {
+  animation-delay: 1s;
+}
+
+.post-it:nth-child(6) {
+  animation-delay: 1.2s;
+}
+
+.post-it:nth-child(7) {
+  animation-delay: 1.4s;
+}
+
+.post-it:nth-child(8) {
+  animation-delay: 1.6s;
 }
