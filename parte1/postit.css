@@ -9,6 +9,7 @@ main {
   min-height: 60vh;
   display: flex;
   flex-wrap: wrap;
+  perspective: 1000px;
 }
 
 .post-it {
